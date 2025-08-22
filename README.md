@@ -29,15 +29,15 @@ Technologies Used:
 
 Getting Started (Local Setup)
 
-1. **Clone the repo*
+1. Clone the repo
 ```bash
 git clone https://github.com/Vuyo111/recipe-manager.git
 cd recipe-manager
 
-2. **Create a virtual environment**
+2. Create a virtual environment
 python -m venv venv
 
-3. **Activate the virtual environment**
+3. Activate the virtual environment
 
 Windows:
 venv\Scripts\activate
