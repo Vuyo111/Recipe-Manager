@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #cce7ff; /* baby blue */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Title */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Form */
+#recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#recipe-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#recipe-form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#recipe-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Recipe List */
+#recipe-list {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+#recipe-list li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+#recipe-list li button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#recipe-list li button:first-of-type {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+#recipe-list li button:first-of-type:hover {
+    background-color: #d4ac0d;
+}
+
+#recipe-list li button:last-of-type {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#recipe-list li button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #recipe-form, #recipe-list {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #recipe-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #recipe-list li button {
+        margin-top: 5px;
+    }
+}

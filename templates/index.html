@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Recipe Manager</h1>
+
+    <div id="recipe-form">
+    <form id="add-form">
+        <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+        <input type="text" id="recipe-ingredients" placeholder="Ingredients (comma-separated)" required>
+        <button type="submit">Add Recipe</button>
+        <p id="form-error" style="color: red; margin-top: 5px;"></p>
+    </form>
+</div>
+
+    <h2>Recipes:</h2>
+    <ul id="recipe-list"></ul>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
